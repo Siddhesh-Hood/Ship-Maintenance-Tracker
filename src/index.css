@@ -1,0 +1,145 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer base {
+  :root {
+    --background: 248 250 252;
+    --foreground: 15 23 42;
+
+    --card: 255 255 255;
+    --card-foreground: 15 23 42;
+
+    --popover: 255 255 255;
+    --popover-foreground: 15 23 42;
+
+    --primary: 12 74 110;
+    --primary-foreground: 248 250 252;
+
+    --secondary: 226 232 240;
+    --secondary-foreground: 30 41 59;
+
+    --muted: 241 245 249;
+    --muted-foreground: 100 116 139;
+
+    --accent: 226 232 240;
+    --accent-foreground: 30 41 59;
+
+    --destructive: 239 68 68;
+    --destructive-foreground: 248 250 252;
+
+    --border: 226 232 240;
+    --input: 226 232 240;
+    --ring: 14 165 233;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 15 23 42;
+    --sidebar-foreground: 248 250 252;
+    --sidebar-primary: 14 165 233;
+    --sidebar-primary-foreground: 248 250 252;
+    --sidebar-accent: 30 41 59;
+    --sidebar-accent-foreground: 248 250 252;
+    --sidebar-border: 30 41 59;
+    --sidebar-ring: 14 165 233;
+  }
+
+  .dark {
+    --background: 15 23 42;
+    --foreground: 248 250 252;
+
+    --card: 30 41 59;
+    --card-foreground: 248 250 252;
+
+    --popover: 30 41 59;
+    --popover-foreground: 248 250 252;
+
+    --primary: 56 189 248;
+    --primary-foreground: 15 23 42;
+
+    --secondary: 51 65 85;
+    --secondary-foreground: 248 250 252;
+
+    --muted: 51 65 85;
+    --muted-foreground: 148 163 184;
+
+    --accent: 51 65 85;
+    --accent-foreground: 248 250 252;
+
+    --destructive: 220 38 38;
+    --destructive-foreground: 248 250 252;
+
+    --border: 51 65 85;
+    --input: 51 65 85;
+    --ring: 56 189 248;
+
+    --sidebar-background: 2 6 23;
+    --sidebar-foreground: 241 245 249;
+    --sidebar-primary: 56 189 248;
+    --sidebar-primary-foreground: 15 23 42;
+    --sidebar-accent: 15 23 42;
+    --sidebar-accent-foreground: 241 245 249;
+    --sidebar-border: 15 23 42;
+    --sidebar-ring: 56 189 248;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold tracking-tight;
+  }
+}
+
+@layer components {
+  .maritime-gradient {
+    @apply bg-gradient-to-br from-maritime-600 via-maritime-700 to-navy-800;
+  }
+  
+  .ocean-wave {
+    background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 50%, #0369a1 100%);
+  }
+  
+  .glass-card {
+    @apply bg-white/10 backdrop-blur-sm border border-white/20;
+  }
+  
+  .status-badge {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
+  }
+  
+  .priority-high {
+    @apply bg-red-100 text-red-800 border border-red-200;
+  }
+  
+  .priority-medium {
+    @apply bg-yellow-100 text-yellow-800 border border-yellow-200;
+  }
+  
+  .priority-low {
+    @apply bg-green-100 text-green-800 border border-green-200;
+  }
+  
+  .status-active {
+    @apply bg-green-100 text-green-800 border border-green-200;
+  }
+  
+  .status-maintenance {
+    @apply bg-orange-100 text-orange-800 border border-orange-200;
+  }
+  
+  .status-inactive {
+    @apply bg-gray-100 text-gray-800 border border-gray-200;
+  }
+}

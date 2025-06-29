@@ -1,0 +1,197 @@
+
+/* Custom CSS for additional styling */
+
+/* Maritime theme custom colors */
+:root {
+  --maritime-50: #f0f9ff;
+  --maritime-100: #e0f2fe;
+  --maritime-200: #bae6fd;
+  --maritime-300: #7dd3fc;
+  --maritime-400: #38bdf8;
+  --maritime-500: #0ea5e9;
+  --maritime-600: #0284c7;
+  --maritime-700: #0369a1;
+  --maritime-800: #075985;
+  --maritime-900: #0c4a6e;
+  --navy-800: #1e3a8a;
+}
+
+/* Smooth transitions */
+* {
+  transition: all 0.2s ease-in-out;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Loading animations */
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Card hover effects */
+.card-hover {
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.card-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  
+}
+
+/* Button loading state */
+.btn-loading {
+  position: relative;
+  pointer-events: none;
+}
+
+.btn-loading::after {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  margin: auto;
+  border: 2px solid transparent;
+  border-top-color: currentColor;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Status indicators */
+.status-active {
+  @apply bg-green-100 text-green-800 border-green-200;
+}
+
+.status-maintenance {
+  @apply bg-orange-100 text-orange-800 border-orange-200;
+}
+
+.status-inactive {
+  @apply bg-gray-100 text-gray-800 border-gray-200;
+}
+
+/* Priority indicators */
+.priority-high {
+  @apply bg-red-100 text-red-800 border-red-200;
+}
+
+.priority-medium {
+  @apply bg-yellow-100 text-yellow-800 border-yellow-200;
+}
+
+.priority-low {
+  @apply bg-blue-100 text-blue-800 border-blue-200;
+}
+
+/* Form validation styles */
+.form-error {
+  @apply border-red-500 focus:border-red-500 focus:ring-red-500;
+}
+
+.form-success {
+  @apply border-green-500 focus:border-green-500 focus:ring-green-500;
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+  .mobile-hidden {
+    display: none;
+  }
+  
+  .mobile-full {
+    width: 100%;
+  }
+}
+
+/* Print styles */
+@media print {
+  .print-hidden {
+    display: none !important;
+  }
+  
+  .print-full-width {
+    width: 100% !important;
+  }
+}
+
+/* Accessibility improvements */
+.focus-visible:focus {
+  outline: 2px solid var(--maritime-600);
+  outline-offset: 2px;
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+  }
+}
+
+/* Calendar specific styles */
+.calendar-day {
+  @apply min-h-24 p-2 border border-slate-200 bg-white hover:bg-slate-50;
+}
+
+.calendar-day.has-events {
+  @apply bg-maritime-50 border-maritime-200;
+}
+
+.calendar-event {
+  @apply text-xs p-1 mb-1 rounded bg-maritime-100 text-maritime-800 truncate;
+}
+
+/* Notification styles */
+.notification-unread {
+  @apply bg-blue-50 border-l-4 border-blue-400;
+}
+
+.notification-read {
+  @apply bg-gray-50 border-l-4 border-gray-300;
+}
+
+/* Table responsive */
+.table-responsive {
+  overflow-x: auto;
+}
+
+.table-responsive table {
+  min-width: 600px;
+}
+
+/* Animation delays for staggered effects */
+.delay-100 { animation-delay: 0.1s; }
+.delay-200 { animation-delay: 0.2s; }
+.delay-300 { animation-delay: 0.3s; }
+.delay-400 { animation-delay: 0.4s; }
+.delay-500 { animation-delay: 0.5s; }
