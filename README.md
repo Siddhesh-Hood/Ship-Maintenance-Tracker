@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Ship Maintenance Tracker ⚓
 
 This is a fully responsive Ship Maintenance Dashboard built using **React**, **Vite**, and **Tailwind CSS**. It helps in managing ships, components, jobs, and maintenance schedules efficiently.
@@ -51,3 +52,6 @@ npm run dev
 The app will be available at:
 
 http://localhost:5173/
+=======
+# Ship-Maintenance-Tracker
+>>>>>>> fe0685738efae2ea477ad728fa28c8718c00944d
