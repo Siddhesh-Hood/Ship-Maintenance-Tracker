@@ -35,11 +35,6 @@ If you have a ZIP file:
 - Extract it using any unzip tool.
 - Open the extracted folder in **VS Code**.
 
-Or clone via Git:
-```bash
-git clone https://github.com/your-username/vessel-maintenance-central.git
-cd vessel-maintenance-central
-
 ### Install Dependencies
 Make sure Node.js is installed.
 Then open terminal in VS Code and run:
@@ -53,5 +48,4 @@ The app will be available at:
 
 http://localhost:5173/
 =======
-# Ship-Maintenance-Tracker
->>>>>>> fe0685738efae2ea477ad728fa28c8718c00944d
+
