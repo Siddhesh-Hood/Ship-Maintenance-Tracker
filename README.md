@@ -1,51 +1,32 @@
-<<<<<<< HEAD
-# Ship Maintenance Tracker ⚓
+# 🚢 Ship Maintenance Tracker
 
-This is a fully responsive Ship Maintenance Dashboard built using **React**, **Vite**, and **Tailwind CSS**. It helps in managing ships, components, jobs, and maintenance schedules efficiently.
-
----
-
-## 🚀 Features
-
-- 🚢 Add and manage Ships & their Components
-- 📋 Create and track Maintenance Jobs
-- 📆 Calendar view for job scheduling
-- 📊 Dashboard with KPIs and metrics
-- 🔔 Notifications panel
-- 💾 Data saved using `localStorage`
-- 📱 Fully responsive design for all devices
+A fully responsive web-based Ship Maintenance Dashboard built using **React**, **Vite**, and **Tailwind CSS**. It helps manage ships, components, jobs, schedules, and maintenance activities in a simple and efficient way.
 
 ---
 
-## 🛠️ Tech Stack
+## 🔗 Live Demo
 
-- React
-- Vite
-- Tailwind CSS
-- React Icons
-- LocalStorage (for state persistence)
+🌐 **Deployed App:** [https://ship-maintenance-tracker.vercel.app/](https://ship-maintenance-tracker.vercel.app/)
+
+📁 **GitHub Repository:** [https://github.com/Siddhesh-Hood/Ship-Maintenance-Tracker](https://github.com/Siddhesh-Hood/Ship-Maintenance-Tracker)
 
 ---
 
-## 🧑‍💻 How to Run This Project (in VS Code)
+## 🛠️ Setup & Installation
 
-### 1. Extract or Clone the Project
+To run the project locally:
 
-If you have a ZIP file:
-- Extract it using any unzip tool.
-- Open the extracted folder in **VS Code**.
+```bash
+# Clone the repository
+git clone https://github.com/Siddhesh-Hood/Ship-Maintenance-Tracker.git
 
-### Install Dependencies
-Make sure Node.js is installed.
-Then open terminal in VS Code and run:
+# Navigate into the folder
+cd Ship-Maintenance-Tracker
 
+# Install dependencies
 npm install
 
-### Start the Development Server
-
+# Run the app
 npm run dev
-The app will be available at:
 
-http://localhost:5173/
-=======
 
